@@ -60,15 +60,22 @@ public function edit(string $id)
  */
 public function update(Request $request, string $id)
 {
-    $request->validate([
-       'user_name' => 'required',
-       'name' => 'required',
-       'email' => 'required',
-    ]);
-    $input = $request->all();
-    $user = User::find($id);
-    $user->update($input);
-    return response()->json(['message' => 'User updated successfully'], 200);
+    $response = array('message' => '', 'success'=>false);
+    $validator = \Validator::make($request->all(), [
+        'user_name' => 'required',
+        'name' => 'required',
+        'email' => 'required',
+     ]);
+
+    if ($validator->fails()) {
+    $response['response'] = $validator->messages();
+    } else {
+        $input = $request->all();
+        $user = User::find($id);
+        $user->update($input);
+        $response = array('message' => 'User updated successfully', 'success'=>true);
+    }
+    return response()->json($response, 200);
 }
 
 /**
