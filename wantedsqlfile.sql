@@ -181,7 +181,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'pasindu123','Pasindu','pasindu98ishan@gmail.com',NULL,'$2y$12$Iadc1NyBJqr.rLTTmjI33eOYEYwQcEwPIe0UV6sU2sxuHZSj/ju9K','super_admin','active',NULL,'2024-02-15 05:24:59','2024-02-15 05:24:59'),(2,'shan','pasindu Ishan','pasindu198ishan@gmail.com',NULL,'$2y$12$dV1r1O17DSpo3BMlLVEbYuLpgbXpDKZzFSrOY3XeiIRsLvJhL3l6q','guest','inactive',NULL,'2024-02-15 05:25:33','2024-02-15 05:26:24'),(3,'jhone123','jhone','example@gnail.com',NULL,'$2y$12$EXFbeBe0NbFO9hOVJnzwvehI.nWdAkY9TAV6XVVgrGwcP4cFVkW.a','admin','active',NULL,'2024-02-15 05:26:10','2024-02-15 05:26:32');
+INSERT INTO `users` VALUES (1,'pasinndu324wd','Pasindu','pasindu98ishan@gmail.com',NULL,'$2y$12$Iadc1NyBJqr.rLTTmjI33eOYEYwQcEwPIe0UV6sU2sxuHZSj/ju9K','super_admin','active',NULL,'2024-02-15 05:24:59','2024-02-15 12:04:03'),(2,'pasindu123','pasindu Ishan','pasindu198ishan@gmail.com',NULL,'$2y$12$dV1r1O17DSpo3BMlLVEbYuLpgbXpDKZzFSrOY3XeiIRsLvJhL3l6q','guest','active',NULL,'2024-02-15 05:25:33','2024-02-15 12:04:22'),(3,'jhone123','jhone','example@gnail.com',NULL,'$2y$12$EXFbeBe0NbFO9hOVJnzwvehI.nWdAkY9TAV6XVVgrGwcP4cFVkW.a','admin','active',NULL,'2024-02-15 05:26:10','2024-02-15 05:26:32');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -194,4 +194,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-15 16:46:48
+-- Dump completed on 2024-02-15 23:40:51
