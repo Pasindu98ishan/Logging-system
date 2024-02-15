@@ -24,6 +24,4 @@ Route::put('/users/deactivate/{id}',[UserController::class, 'switch']);
 Route::GET('/users/sort/{collunm}',[UserController::class, 'sort']);
 Route::patch('/users/update/{id}', [UserController::class, 'update']);
 Route::get('/users/preview/{id}', [UserController::class, 'edit'])->name('edit');
-Route::group(['middleware' => 'check-permissions'], function () {
-   
-});
+

@@ -15,7 +15,7 @@
                             @endif
                             <div class="card-header">Preview {{ $user->name }}</div>
                             <div class="card-body">
-                            <form action="{{ route('users.update', $user->id) }}" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('users.update', $user->id) }}" method="PATCH" enctype="multipart/form-data">
                                     {!! csrf_field() !!}
                                     @method("PATCH")
                                     <input type="hidden" name="id" value="{{ $user->id }}" />

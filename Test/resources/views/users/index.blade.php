@@ -111,7 +111,7 @@
                 messageElement.innerText = "User successfully activated!";
             }
             setTimeout(function() {
-                messageElement.innerHtml = "";
+                messageElement.innerHTML = "";
             }, 5000);
         },
         error: function(xhr, status, error) {
