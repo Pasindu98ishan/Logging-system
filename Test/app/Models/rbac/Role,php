@@ -1,0 +1,35 @@
+<?php
+
+namespace App\Models\rbac;
+use Illuminate\Database\Eloquent\Model;
+use App\Models\rbac\Permission;
+
+
+
+class Role extends Model
+{
+
+    const SUPER_ADMIN = 'super-admin';
+    const ADMIN = 'admin';
+    const GUEST= 'guest';
+
+    public static array $roles = [
+     self::ADMIN                    => [
+         'children'    => [
+             Permission::PERMISSION_MANAGE_USER,
+             Permission::PERMISSION_MANAGE_HOME
+            
+         ],
+     ],
+     self::SUPER_ADMIN              => [
+         'children'    => [
+             'admin',
+         ],
+     ],
+     self::GUEST              => [
+          'children'    => [
+               Permission::PERMISSION_MANAGE_HOME
+          ],
+      ],
+];
+}
